@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #222; 
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 4rem;
+}
+
+.header {
+    color: #c0fac0; 
+    margin-bottom: 20px; 
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.search-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    margin-top: 2rem; 
+}
+
+input {
+    padding: 8.8px;
+    width: 30%; 
+    border: 2px solid #c0fac0; 
+    border-right: none; 
+    border-radius: 4px 0 0 4px;  
+    font-optical-sizing: auto;
+    background-color: #222;
+    color: #c0fac0;
+}
+
+button {
+    padding: 8.3px 15px;
+    background-color: #c0fac0; 
+    color: #222; 
+    border: 2px solid #c0fac0; 
+    border-radius: 0 4px 4px 0; 
+    margin: -.1rem;
+    cursor: pointer; 
+    transition: background-color 0.4s; 
+}
+
+button:hover {
+    background-color: #7ef37e;
+}
+
+.img_temp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.temp{
+    font-size: 5rem;
+}
+
+
+.weather-header {
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #c0fac0; 
+}
+
+.weather-img {
+    width: 120px; 
+    height: 120px;
+    border-radius: 50%;
+}
+
+.weather-result {
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #c0fac0;
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 2.5rem; 
+    }
+
+    .container {
+        padding: 4rem; 
+    }
+
+    input {
+        padding: 8.1px;
+    } 
+
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 2rem; 
+    }
+
+    input {
+        padding: 8.1px;
+        width: 50%; 
+    }
+
+}
