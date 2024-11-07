@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  } 
+
 body {
     font-family: "Inter", sans-serif;
     text-align: center;
-    margin: 20px;
     background-color: #222; 
 }
 
 .container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     max-width: 600px;
     margin: 0 auto;
-    padding: 4rem;
 }
 
 .header {
@@ -19,19 +28,18 @@ body {
     font-size: 3rem;
     font-weight: 400;
     font-style: normal;
-    text-decoration: underline;
 }
 
 .search-container {
     display: flex; 
     justify-content: center;
     align-items: center; 
+    max-width: 600px;
     margin-top: 2rem; 
 }
 
 input {
     padding: 8.8px;
-    width: 30%; 
     border: 2px solid #c0fac0; 
     border-right: none; 
     border-radius: 4px 0 0 4px;  
@@ -61,6 +69,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    margin: 4rem;
 }
 
 .temp{
@@ -73,6 +82,7 @@ button:hover {
     font-weight: 400;
     font-style: normal;
     color: #c0fac0; 
+    margin: 1rem;
 }
 
 .weather-img {
@@ -86,6 +96,10 @@ button:hover {
     font-weight: 400;
     font-style: normal;
     color: #c0fac0;
+}
+
+.weather-result p{
+    margin: .3rem;
 }
 
 @media (max-width: 768px) {
@@ -105,11 +119,20 @@ button:hover {
 
 @media (max-width: 480px) {
     .header {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .weather-header {
+        font-size: 1rem;
+    }
+
+    .img_temp{
+        gap: .7rem;
+        margin: 1rem;
     }
 
     .container {
-        padding: 2rem; 
+        padding: .5rem; 
     }
 
     input {

@@ -1,4 +1,4 @@
-export interface WeatherResponse {
+export interface ApiResponse {
   location: {
     name: string;
     country: string;

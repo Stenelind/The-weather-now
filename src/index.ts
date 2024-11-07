@@ -1,4 +1,4 @@
-import { WeatherResponse } from '../interface/interface';
+import { ApiResponse } from '../interface/interface';
 
 const API = 'ab65f288711882703ee086db2c5b75ce';
 const URL = 'https://api.weatherstack.com/current';
@@ -33,7 +33,7 @@ async function fetchWeather(city: string): Promise<void> {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
 
-        const data: WeatherResponse = await response.json();
+        const data: ApiResponse = await response.json();
         displayWeather(data);
 
         localStorage.setItem('lastSearchedCity', city);
@@ -43,7 +43,7 @@ async function fetchWeather(city: string): Promise<void> {
     }
 }
 
-function displayWeather(data: WeatherResponse): void {
+function displayWeather(data: ApiResponse): void {
     const weatherDiv = document.querySelector('#weatherResult');
     
     const localtime = new Date(data.location.localtime);
