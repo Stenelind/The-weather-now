@@ -1,4 +1,4 @@
-import { ApiResponse } from '../interface/interface';
+import { ApiResponse } from 'interface/interface';
 
 const API = 'ab65f288711882703ee086db2c5b75ce';
 const URL = 'https://api.weatherstack.com/current';
